@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DesignPatterns
+namespace ProxyPattern
 {
     class Program
     {
-        static void ClientProxyPatternTest()
+        static void Main(string[] args)
         {
             Console.WriteLine("Init proxy image: ");
             ProxyImage proxyImage = new ProxyImage("https://gpcoder.com/favicon.ico");
@@ -19,11 +19,6 @@ namespace DesignPatterns
             Console.WriteLine("---");
             Console.WriteLine("Call real service 2nd: ");
             proxyImage.ShowImage();
-        }
-
-        static void Main(string[] args)
-        {
-            ClientProxyPatternTest();
         }
     }
 }
